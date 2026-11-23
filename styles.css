@@ -1,0 +1,68 @@
+body {
+  font-family: "Trebuchet MS", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(#252629, #3a404a);
+  color: #dae0eb;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 0 30px 0;
+  padding: 5vh;
+}
+
+.hud {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  width: 100%;
+  max-width: 900px;
+  min-height: 200px;
+  padding: 25px;
+
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.item {
+  flex: 1 1 180px;
+  min-width: 180px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+select {
+  padding: 12px 20px;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+  outline: none;
+  color: #dae0eb;
+}
+
+select option {
+  background-color: #26384a;
+  color: #dae0eb;
+}
+
+#inputbox{
+    margin: 1vh;
+    padding: 1vh;
+}

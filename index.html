@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCT360 Lab 6</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+    <h1> Currency Exchange Converter</h1>
+
+     <div class="hud">
+        <div class="item">
+            <input id="inputbox" placeholder="Type the amount to convert.">
+        </div>
+        <div class="item">
+            Currency:
+            <select id="currency1">
+                <option value="CAD">CAD</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+            </select>
+        </div>
+        <div class="item">
+            Convert To:
+                <select id="currency2">
+                    <option value="CAD">CAD</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+            </select>
+        </div>
+        <div class="item">(AMOUNT_TYPED)(CURR1)=(CONVERSION)(CURR2)</div>
+        <div class="item">Swap</div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
