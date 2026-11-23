@@ -1,3 +1,4 @@
+/* Main styles for page, containers. */
 body {
   font-family: "Trebuchet MS", sans-serif;
   margin: 0;
@@ -43,8 +44,11 @@ h1 {
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.2);
   color: white;
+  overflow: wrap;
 }
 
+/* Styles for dropdown menu containing currencies, as well as every
+element within. */
 select {
   padding: 12px 20px;
   font-family: "Trebuchet MS", sans-serif;
@@ -55,6 +59,13 @@ select {
   cursor: pointer;
   outline: none;
   color: #dae0eb;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 select option {
@@ -65,4 +76,14 @@ select option {
 #inputbox{
     margin: 1vh;
     padding: 1vh;
+}
+
+/* Animation for button hover to designate what can be pressed. */
+.pressable{
+    transition: opacity 0.2s ease;
+}
+
+.pressable:hover{
+    opacity: 0.8;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }

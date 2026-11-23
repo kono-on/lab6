@@ -8,31 +8,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Main container and title elements. -->
     <div class="content">
     <h1> Currency Exchange Converter</h1>
 
      <div class="hud">
+        <!-- Each panel, representing a value or action. -->
         <div class="item">
             <input id="inputbox" placeholder="Type the amount to convert.">
         </div>
         <div class="item">
             Currency:
-            <select id="currency1">
-                <option value="CAD">CAD</option>
-                <option value="USD">USD</option>
-                <option value="EUR">EUR</option>
-            </select>
+            <select id="currency1"></select>
         </div>
         <div class="item">
             Convert To:
-                <select id="currency2">
-                    <option value="CAD">CAD</option>
-                    <option value="USD">USD</option>
-                    <option value="EUR">EUR</option>
-            </select>
+                <select id="currency2"></select>
         </div>
-        <div class="item">(AMOUNT_TYPED)(CURR1)=(CONVERSION)(CURR2)</div>
-        <div class="item">Swap</div>
+        <div class="item pressable" id="submit">Submit</div>
+        <div class="item" id="result">Result: </div>
+        <div class="item pressable" id="swap">Swap</div>
     </div>
     </div>
 
